@@ -17,4 +17,3 @@ class NN(object):
         
     def optimize(self, batch_x, batch_y):
         return tf.train.optimizer.minimize(self.loss, name="optimizer")
-    
