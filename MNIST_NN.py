@@ -1,14 +1,13 @@
-
 import numpy as np
 import pandas as pd
 from scipy.misc import imread
 from sklearn.metrics import accuracy_score
 import tensorflow as tf
+import matplotlib.pyplot as plt
 
 from Helper_Func import load_dataset
 X_train, y_train, X_val, y_val, X_test, y_test = load_dataset()
 print(X_train.shape, y_train.shape)
-import matplotlib.pyplot as plt
 %matplotlib inline
 plt.imshow(X_train[0], cmap="Greys");
 
